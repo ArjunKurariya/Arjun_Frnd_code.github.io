@@ -6,10 +6,22 @@
 
     <title>JAI SHREE RAM</title>
 
+    <!-- this is the link to the material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <style>
-      * {
+      
+
+     * {
         margin: 0;
         padding: 0;
+      }
+
+      .row1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
       }
 
       /*--------------MENU----------*/
@@ -54,9 +66,6 @@
         display: flex;
         margin-top: 50px;
         margin-bottom: 0px;
-
-
-
       }
 
       .left {
@@ -70,7 +79,6 @@
         border: 1px solid #c4c4c4;
         background-color: #c4c4c4;
         /* flex-direction: row; */
-        
       }
 
       .left h1 {
@@ -128,9 +136,6 @@
       /*-*-----------USE----------*/
 
       .use h2 {
-        margin-left: 620px;
-        margin-top: 27px;
-        margin-bottom: 50px;
         color: #0c245b;
         font-family: Roboto;
         font-size: 25px;
@@ -138,9 +143,14 @@
         font-weight: 700;
         line-height: 29px;
         letter-spacing: 0.06em;
+        /* margin-left: 620px;
+        margin-top: 27px;
+        margin-bottom: 50px;
         text-align: left;
         width: 210px;
-        height: 29px;
+        height: 29px; */
+        padding-top: 80px;
+        padding-bottom: 80px;
       }
 
       .row {
@@ -152,9 +162,26 @@
       .col {
         border: 1px solid #c4c4c4;
         background-color: pink;
-        flex-basis: 10.2 %;
+        flex-basis: 10.2%;
         width: 160px;
         height: 105px;
+      }
+
+      .col1{
+        border: 1px solid #c4c4c4;
+        background-color: pink;
+        width: 160px;
+        height: 105px;
+        margin-left: auto;
+        margin-right: auto;
+     
+
+      }
+
+      .row1{
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-gap: 20px;
       }
 
       /*---------------READ----------------*/
@@ -164,10 +191,7 @@
       }
 
       .read h3 {
-        margin-left: 579px;
-        margin-bottom: 27px;
-        width: 500px;
-        height: 29px;
+        text-align: center;
         color: #0c245b;
         font-family: Roboto;
         font-size: 25px;
@@ -175,7 +199,12 @@
         font-weight: 400;
         line-height: 29px;
         letter-spacing: 0.06em;
-        text-align: left;
+        /* margin-left: 579px;
+        margin-bottom: 27px;
+        width: 500px;
+        height: 29px;
+       
+        text-align: left; */
       }
 
       .bor {
@@ -201,16 +230,19 @@
 
       .sol ul li {
         display: inline-block;
-        margin-left: 200px;
+        /* margin-left: 200px; */
         font-size: 27px;
         font-family: Roboto;
         color: #0c245b;
       }
 
       .bor_sol {
+        width: 80vw;
         border: 3px solid #0c245b;
         margin-bottom: 20px;
         background-color: #0c245b;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .bor_down {
@@ -341,6 +373,16 @@
         padding-bottom: 4px;
       }
 
+      .row button{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .col_blog h5 {
+        font-size: 1.3rem;
+      }
+
       /*-----Graph------*/
 
       .graph {
@@ -352,8 +394,7 @@
       /*------Contact Us-----*/
 
       .contact {
-
-          /*changed by hrithik  */
+        /*changed by hrithik  */
         width: 1152px;
         height: 359px;
         background: #ffffff;
@@ -367,15 +408,14 @@
         color: #0c245b;
         margin-bottom: 30px;
 
-         /* line added by hrithik shrivastava */
-         margin-left: auto;
-         margin-right: auto;
-
+        /* line added by hrithik shrivastava */
+        margin-left: auto;
+        margin-right: auto;
       }
-      .bor{
-          padding: 0;
-          /* this is added by hrithik shrivastava */
-          width: 100%;
+      .bor {
+        padding: 0;
+        /* this is added by hrithik shrivastava */
+        width: 100%;
       }
 
       .h_con {
@@ -462,11 +502,11 @@
         margin-top: 50px;
       }
 
-      right_con {
+      .right_con {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        margin-top: 200px;
+
       }
 
       .left_con {
@@ -483,9 +523,10 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        grid-gap: 50px;
       }
 
-      col_blog .row {
+      .col_blog .row {
         display: flex;
         flex-direction: column;
       }
@@ -505,10 +546,12 @@
       .bor_blog {
         border: 1px solid silver;
         background-color: #c4c4c4;
-        width: 270px;
-        height: 230px;
+        width: 130px;
+        height: 130px;
         border-radius: 20px;
       }
+
+      /*--------------LOAD BUTTON-------------------*/
 
       .load button {
         width: 180px;
@@ -517,14 +560,32 @@
         font-size: 18px;
         background-color: white;
         border: 2px solid #0c245b;
-        margin-bottom: 15px;
         color: #0c245b;
-        margin-left: 700px;
       }
 
-      .news {
+      .load {
         margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      /*----------------NEWS-----------------*/
+
+      .news {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0 20px 0;
+        flex-wrap: wrap;
+        
+      }
+
+      .news p {
+
+        padding-bottom: 10px;
+
       }
 
       .news p {
@@ -539,7 +600,6 @@
       }
 
       .t {
-        margin-left: 400px;
         height: 42px;
         width: 250px;
         font-family: Roboto;
@@ -553,9 +613,93 @@
         color: white;
       }
 
+      .use h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /*-----------------FOOTER----------------------*/
+      .footer {
+        border: 2px solid #0c245b;
+        background-color: #0c245b;
+        margin-top: 50px;
+        height: 594px;
+      }
+
+      .bd1 .b {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .bd2 .b {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .bd3 .b {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .bd3 h4 {
+        text-align: center;
+      }
+      .bd1 h4 {
+        text-align: center;
+      }
+      .bd2 h4 {
+        text-align: center;
+      }
+
+      .bd2 button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .bd3 button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* code by hrithik shrivastava */
+
+      .col_blog {
+        display: flex;
+      }
+
+      .sol ul{
+        padding-bottom: 20px;
+      }
+
+      .news-container2{
+          display: grid;
+      }
+       
+
+
+
+      /* code by hrithik shrivastava */
+
       /*-------**---------**MEDIA QUERY**--------**-------*/
 
-      @media(max-width: 1082px) {
+      @media screen and ( min-width: 1082px ){
+              
+          .topnav{
+              display: none;
+          }
+      }
+
+      @media (max-width: 1082px) {
+        /* navigation bar */
+
+
+
+          
+        .row1{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        
+        }
+
+
         /*-----------HEADER------------*/
 
         header {
@@ -566,10 +710,34 @@
         }
 
         /*-----------USED----------*/
-        .row {
+        /* .row {
           display: grid;
           grid-template-columns: 90px 90px 90px;
           grid-row-gap: 20px;
+        } */
+
+
+        .col_blog{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .row{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .row button {
+        
+          width: 100px;
+
+        }
+
+        .blog{
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .bor {
@@ -577,11 +745,27 @@
           height: 35px;
         }
 
+        .row p{
+          width: 40%;
+        }
+
         /*-----------GRAPH------------*/
 
         .graph {
-          display: block;
-          margin-left: 300px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+
+        }
+
+        .col_blog img{
+          border-radius: 20px;
+        }
+
+        .bor{
+          margin: 0;
+          width: 100vw;
         }
 
         /*-----------CONTACT-------------*/
@@ -590,105 +774,113 @@
           display: flex;
         }
 
-        .left{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
-
-
 
         /* .left button{
             margin-left: auto;
             margin-right: auto;
         } */
-         
 
-         .contactUsButton{
-             display: none;
-         }
-
-         .contact{
-
-         
-             height: 700px;
-             width: 500px;
-             display: flex;
-             flex-direction: column;
-
-         }
-
-        
-        .left_con{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0;
+        .contactUsButton {
+          display: none;
         }
 
-        .up_con{
-            display: flex;
-            flex-direction: column;
-            width: 300px;
-            margin: 0;
-            margin-left: auto;
-            margin-right: auto;
-
+        .contact {
+          height: 700px;
+          width: 500px;
+          display: flex;
+          flex-direction: column;
         }
 
-        .down_con{
-            width: 300px;
-            margin-left: auto;
-            margin-right: auto;
-            
+        .left_con {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0;
         }
 
-        .up_con input{
-            margin: 0;
-            padding : 0 ;
+        .up_con {
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          margin: 0;
+          margin-left: auto;
+          margin-right: auto;
         }
 
-        .down_con button{
-            margin: 0;
-            padding : 0 ;
-            
-        }
-        .down_con input{
-            margin: 0;
-            padding : 0 ;
-
+        .down_con {
+          width: 300px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
-        .form{
-            margin-left: auto;
-            margin-right: auto;
+        .up_con input {
+          margin: 0;
+          padding: 0;
         }
 
-        .up_con{
-
-           height: 120px;
-           display: flex;
-           flex-direction: column;
-           justify-content: space-around;
-
-
+        .down_con button {
+          margin: 0;
+          padding: 0;
+        }
+        .down_con input {
+          margin: 0;
+          padding: 0;
         }
 
-        .down_con{
-            height: 120px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around ;
+        .form {
+          margin-left: auto;
+          margin-right: auto;
         }
-        
-        
+
+        .up_con {
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .down_con {
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
 
 
+          /*MAKING MENU NAVIGATION NONE IN NORMAL MODE...*/
+
+        .nav-bigscreen {
+          display: none;
+        }
+
+        .bor_down {
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .bor_down div{
+           margin-bottom: 20px;
+        }
       }
 
-     /* for small phones */
-     /* @media screen ( max-width: 560px ) {
+      .read h3{
+        margin-bottom: 20px;
+      }
+
+      ul li{
+        text-align: center;
+      }
+
+      /* for small phones */
+      /* @media screen ( max-width: 560px ) {
 
          .row .col{
              width : 100px ;
@@ -696,9 +888,136 @@
          
      } */
 
-     header {
+      /* code by hrithik shrivastava */
+      
 
-     }
+
+      .news-container1 p {
+        
+          text-align: center;
+          margin: 0;
+      
+      }
+      .news-container2{
+           display: flex;
+           justify-content: center;
+        align-items: center;
+      }
+
+      .options li {
+        color: white;
+      }
+
+      .options {
+        margin-left: auto;
+        display: flex;
+      }
+
+      nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* Style the navigation menu */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+
+      /* Style navigation menu links */
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: #0c245b;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      /* Add a grey background color on mouse-over */
+      /* .topnav a:hover {
+        background-color: #ddd;
+        color: green;
+      } */
+
+      /* Style the active link (or home/logo) */
+      .active {
+        background-color: #0c245b;
+        color: white;
+      }
+
+      .active img {
+        height: 30px;
+        width: 100px;
+      }
+
+      /* code by hrithik shrivastava */
+
+      .sol ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .know-more-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .use h2{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+       .row h5{
+
+          padding-top: 20px;
+             
+       }
+
+       .row button{
+         border : 0 ;
+         background-color: white;
+         text-align: left;
+       }
+
+       .row p {
+
+         padding-top: 20px;
+         padding-bottom: 20px;
+
+       }
+
+       .row h5{
+         text-align: center;
+       }
+
+       .blog img{
+         border-radius : 20px ;
+       }
+
+
 
     </style>
 
@@ -706,18 +1025,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+
   </head>
 
   <body>
+
     <!----------MENU---------->
 
-    <nav>
+    <nav class="nav-bigscreen">
       <div class="logo">
-        <img src="images/logo.png" />
+        <img src="./logo.png" />
       </div>
 
-      <div id="slideout-menu">
-        <ul>
+      <div class="menu-options" id="slideout-menu">
+        <ul class="options">
           <li>Lorem Ipsim</li>
           <li>Lorem Ipsim</li>
           <li>Lorem Ipsim</li>
@@ -729,11 +1050,37 @@
       </div>
     </nav>
 
+    <!-- code by hrithik -->
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Top Navigation Menu (DROP-DOWN MENU) -->
+
+    <div class="topnav">
+      <a href="#home" class="active">
+        <img src="./logo.png" alt="company logo" srcset="" />
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">Lorem ipsum </a>
+        <a href="#contact">Lorem ipsum </a>
+        <a href="#about">Lorem ipsum </a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- code by hrithik -->
+
     <!----------------HEADER------------------->
 
     <header>
-
-        
       <div class="left">
         <h1>Lorem ipsum ipsum</h1>
 
@@ -755,18 +1102,18 @@
     <div class="use">
       <h2>used by the best</h2>
 
-      <div class="row">
-        <div class="col"></div>
+      <div class="row1">
+        <div class="col1"></div>
 
-        <div class="col"></div>
+        <div class="col1"></div>
 
-        <div class="col"></div>
+        <div class="col1"></div>
 
-        <div class="col"></div>
+        <div class="col1"></div>
 
-        <div class="col"></div>
+        <div class="col1"></div>
 
-        <div class="col"></div>
+        <div class="col1"></div>
       </div>
     </div>
 
@@ -775,7 +1122,7 @@
     <div class="read">
       <h3>Read Our Customer Stories -</h3>
 
-      <div class="bor">hjjh</div>
+      <div class="bor"></div>
     </div>
 
     <!--------------------SOLUTIONS-------------------->
@@ -784,12 +1131,10 @@
       <h3>Our smart solution let’s you</h3>
 
       <ul>
-        <li>Acquire customer  </li>
+        <li>Acquire customer</li>
         <li>Engage customer</li>
         <li>Retain customers</li>
       </ul>
-      
-    
 
       <div class="bor_sol"></div>
 
@@ -804,7 +1149,9 @@
             Lorem ipsum Lorem Ipsum
           </p>
 
-          <button type="button">Know More</button>
+          <div class="know-more-button">
+            <button type="button">Know More</button>
+          </div>
         </div>
 
         <div class="bd2">
@@ -817,7 +1164,9 @@
             Lorem ipsum Lorem Ipsum
           </p>
 
-          <button type="button">Know More</button>
+          <div class="know-more-button">
+            <button type="button">Know More</button>
+          </div>
         </div>
 
         <div class="bd3">
@@ -830,7 +1179,9 @@
             Lorem ipsum Lorem Ipsum
           </p>
 
-          <button type="button">Know More</button>
+          <div class="know-more-button">
+            <button type="button">Know More</button>
+          </div>
         </div>
       </div>
     </div>
@@ -838,16 +1189,18 @@
     <!---------------------GRAPH--------------------->
 
     <div class="graph">
-      <img src="images/g1.gif" class="g1" />
-      <img src="images/g2.png" class="g2" />
+      <img src="./g1.gif" class="g1" />
+      <img src="./g2.png" class="g2" />
     </div>
+
+    <!------------------------------CONTACT US--------------------------------->
 
     <h3 class="h_con">Contact us for great deals</h3>
 
     <div class="contact">
 
       <div class="left_con">
-        <img src="./contact.jpg" />
+        <img src="./contact.jpg" >
       </div>
 
       <div class="right_con">
@@ -872,7 +1225,7 @@
 
       <div class="col_blog">
         <div class="row">
-          <div class="bor_blog">jhj</div>
+          <img src="./contact.jpg" alt="" />
 
           <h5>Lorem ipsum dolor</h5>
 
@@ -881,11 +1234,11 @@
             fermentum consectetur......
           </p>
 
-          <button type="button">Read More</button>
+          <button type="button">Read More <i class="material-icons">chevron_right</i> </button>
         </div>
 
         <div class="row">
-          <img src="images/contact.jpg" />
+          <img src="./contact.jpg" alt="" />
 
           <h5>Lorem ipsum dolor</h5>
 
@@ -894,11 +1247,11 @@
             fermentum consectetur......
           </p>
 
-          <button type="button">Read More</button>
+          <button type="button">Read More <i class="material-icons">chevron_right</i> </button>
         </div>
 
         <div class="row">
-          <div class="bor_blog">jhj</div>
+          <img src="./contact.jpg" alt="" />
 
           <h5>Lorem ipsum dolor</h5>
 
@@ -907,28 +1260,54 @@
             fermentum consectetur......
           </p>
 
-          <button type="button">Read More</button>
+          <button type="button">Read More <i class="material-icons">chevron_right</i> </button>
         </div>
       </div>
     </div>
 
-    <!---------------------LOAD MORE BUTTON--------------------->
-
-    <div class="load">
+   <div class="load">
       <button type="button">Load More</button>
     </div>
 
     <!----------------------NEWS SECTION----------------------->
 
-    <div class="news">
-      <p>
-        Fresh news delivered <br />
-        to your inbox
-      </p>
+     <div class="news">
 
-      <input type="text" placeholder="Enter Your Email" class="t" />
-      <button type="button">Subscribe</button>
+      <div class="news-container1">
+        <p>
+          Fresh news delivered <br />
+          to your inbox
+        </p>
+      </div>
+
+      
+      <div class="news-container2">
+
+        <input type="text" placeholder="Enter Your Email" class="t" />
+        <button type="button">Subscribe</button>
+
+      </div>
+
     </div>
+
+
+    <!------------------------Footer----------------------------->
+
+    <div class="footer">jk</div>
+
+    <!-- code by hrithik -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myLinks');
+        if (x.style.display === 'block') {
+          x.style.display = 'none';
+        } else {
+          x.style.display = 'block';
+        }
+      }
+    </script>
+
+    <!-- code by hrithik -->
   </body>
 </html>
-
